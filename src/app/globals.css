@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  /* This maps your utility classes directly */
+  /* Usage: bg-brand-blue, text-brand-blue */
+  --color-brand-blue: #1D4AA7;
+  --color-brand-blue2: #002b5c;
+  --color-brand-dark: #12009e;
+  --color-brand-blue-light: #638DE4;
+
+  --color-instagram: #a321c7;
+  --color-facebook: #234ae9;
+  --color-tiktok: #c51717;
+  --color-mail: #000000;
+
+  /* Fonts, breakpoints, etc. go here too if needed */
+}
+
+/* Standard CSS variables for non-Tailwind usage (optional but good for consistency) */
+:root {
+  --background: #ffffff;
+  --foreground: #f9fafb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    /* Keeping light mode preference per your design */
+    --foreground: #f9fafb;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
